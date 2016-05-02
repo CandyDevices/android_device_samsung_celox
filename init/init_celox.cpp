@@ -61,6 +61,14 @@ void vendor_load_properties()
         property_set("ro.product.device", "SGH-I727");
         property_set("telephony.lteOnGsmDevice", "1");
         property_set("ro.telephony.default_network", "9");
+    } else if (strstr(device_variant, "SGH-I727R")) {
+        /* skyrocket - Rogers */
+        property_set("ro.build.fingerprint", "samsung/SGH-I727R/SGH-I727R:4.1.2/JZO54K/I727RUXMA7:user/release-keys");
+        property_set("ro.build.description", "SGH-I727R-user 4.1.2 JZO54K I727RUXMA7 release-keys");
+        property_set("ro.product.model", "SGH-I727R");
+        property_set("ro.product.device", "SGH-I727R");
+        property_set("telephony.lteOnGsmDevice", "1");
+        property_set("ro.telephony.default_network", "9");
     }
 
     ERROR("Found prop file for %s setting build properties for device\n", device_variant);
