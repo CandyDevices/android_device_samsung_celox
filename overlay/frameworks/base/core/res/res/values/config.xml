@@ -204,4 +204,7 @@
         <item>evdo:4094,87380,262144,4096,16384,262144</item>
     </string-array>
 
+    <!-- Whether device supports lockscreen rotation -->
+    <bool name="config_enableLockScreenRotation">true</bool>
+
 </resources>
